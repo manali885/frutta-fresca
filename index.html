@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="final.js">
+    <title>frutta-fresca</title>
+</head>
+<body>
+    <div class="header">
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="frutta fresca.png" width="105px">
+            </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="Contact.html">Contact us</a></li>
+                
+                
+            </ul>
+        </nav>
+        <img src="shopping-cart.png" width="30px" height="30px">
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Give your children fruits that are rich in vitamins!</h1>
+                <p>The fruit of the spirit is love, Joy, peace, forbearance, kindness goodness, faithfullness</p>
+                <a href="" class="btn">Explore More &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="img2.png" width="100%">
+            </div>
+        </div>
+    </div>
+    </div>   
+    <div class="catagories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="orange.png" >
+                </div>
+                <div class="col-3">
+                    <img src="mango.png" >
+                </div>
+                <div class="col-3">
+                    <img src="apple.png" >
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">      
+                <img src="orange.png">
+                <h4>Oranges</h4>
+                <p>₹50/Kg</p>
+                <button>Add to cart</button>
+                
+            </div>
+            <div class="col-4">      
+                <img src="apple.png">
+                <h4>Apple</h4>
+                 <p>₹50/Kg</p>
+                 <button>Add to cart</button>
+            </div>
+            <div class="col-4">      
+                <img src="mango.png">
+                <h4>Mango</h4>
+                <p>₹50/Kg</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">               
+            <h3>All copyrights reserved</h3>    
+            
+        </div>
+    </div>
+    <script>
+        var MenuItems= document.getElementById("MenuItems")
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight="200px";
+            }
+            else{
+                MenuItems.style.maxHeight="0px";
+            }
+        } 
+    </script>
+</body>
+</html>
